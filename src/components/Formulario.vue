@@ -14,7 +14,7 @@
         />
       </div>
       <div class="column">
-        <Temporizador @aoTemporizadorFinalizar="finalizarTarefa"/>
+        <Temporizador @aoTemporizadorFinalizar="finalizarTarefa" />
       </div>
     </div>
   </div>
@@ -30,17 +30,17 @@ export default defineComponent({
     Temporizador,
   },
   data: () => ({
-    descricao: '',
+    descricao: "",
   }),
   methods: {
     finalizarTarefa(tempoDecorrido: number): void {
       console.log(tempoDecorrido);
       console.log(this.descricao);
-      this.descricao = '';
-    }
-  }
+      this.descricao = "";
+    },
+  },
 });
 </script>
-    Temporizador
+Temporizador
 
 <style></style>
